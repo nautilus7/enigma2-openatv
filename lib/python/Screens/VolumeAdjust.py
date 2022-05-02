@@ -5,15 +5,11 @@ from os.path import isfile
 from enigma import eDVBVolumecontrol, eServiceReference, iPlayableService, iServiceInformation
 
 from ServiceReference import ServiceReference
-from Components.ActionMap import ActionMap, HelpableActionMap
-from Components.config import ConfigNothing, ConfigNumber, ConfigSelectionNumber, ConfigSubsection, ConfigYesNo, NoSave, config, getConfigListEntry
-from Components.ConfigList import ConfigList, ConfigListScreen
-from Components.Label import Label
+from Components.ActionMap import HelpableActionMap
+from Components.config import ConfigSelectionNumber, ConfigSubsection, ConfigYesNo, NoSave, config, getConfigListEntry
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Sources.StaticText import StaticText
-from Plugins.Plugin import PluginDescriptor
 from Screens.ChannelSelection import ChannelSelectionBase, OFF
-from Screens.Screen import Screen
 from Screens.Setup import Setup
 from Tools.Directories import SCOPE_CONFIG, fileReadXML, moveFiles, resolveFilename
 
